@@ -16,15 +16,7 @@ router.get('/', (req, res) => {
           'price',
           'stock',
           'category_id'
-        ],
-        include: {
-          model: ProductTag,
-          attributes: [
-            'id',
-            'product_id',
-            'tag_id'
-          ]
-        }
+        ]
       }
     ]
   })
